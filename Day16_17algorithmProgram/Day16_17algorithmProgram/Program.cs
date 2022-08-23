@@ -7,7 +7,7 @@ class Program
         while (flag == "Y" || flag == "y")
         {
             Console.WriteLine("Welcome To Datastructures and Algorithms");
-            Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort");
+            Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort");
             Console.WriteLine("Enter Your Option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -20,9 +20,13 @@ class Program
                 //    BinarySearchProb binarysearchprob = new BinarySearchProb();
                 //    binarysearchprob.binarySearch();
                 //    break;
-                case 3:
-                    InsertionSort insertionsort = new InsertionSort();
-                    insertionsort.insertionSort();
+                //case 3:
+                //    BubbleSort insertionsort = new BubbleSort();
+                //    insertionsort.insertionSort();
+                //    break;
+                case 4:
+                    BubbleSort bubblesort = new BubbleSort();
+                    bubblesort.bubbleSort();
                     break;
                 default:
                     Console.WriteLine("-------Enter the valid option---");
