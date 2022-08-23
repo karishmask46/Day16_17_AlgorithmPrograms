@@ -7,7 +7,7 @@ class Program
         while (flag == "Y" || flag == "y")
         {
             Console.WriteLine("Welcome To Datastructures and Algorithms");
-            Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort\n5.MergeSort\n6.Anagram\n7.PrimeNumber");
+            Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort\n5.MergeSort\n6.Anagram\n7.PrimeNumber\n8.AnagramAndPalindromeNumber ");
             Console.WriteLine("Enter Your Option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -36,9 +36,13 @@ class Program
                 //    Anagrams anagrams = new Anagrams();
                 //    anagrams.checkAnagrams();
                 //    break;
-                case 7:
-                    PrimeNumbers primenumbers = new PrimeNumbers();
-                    primenumbers.primeNumbers();
+                //case 7:
+                //    PrimeNumbers primenumbers = new PrimeNumbers();
+                //    primenumbers.primeNumbers();
+                //    break;
+                case 8:
+                    AnagramAndPalindromeNumber anagramandpalindromenumber = new AnagramAndPalindromeNumber();
+                    anagramandpalindromenumber.anagramAndPalindrome();
                     break;
                 default:
                     Console.WriteLine("-------Enter the valid option---");
