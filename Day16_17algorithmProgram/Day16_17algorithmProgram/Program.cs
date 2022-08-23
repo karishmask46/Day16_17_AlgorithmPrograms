@@ -7,7 +7,7 @@ class Program
         while (flag == "Y" || flag == "y")
         {
             Console.WriteLine("Welcome To Datastructures and Algorithms");
-            Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort\n5.MergeSort\n6.Anagram\n7.PrimeNumber\n8.AnagramAndPalindromeNumber\n9.SearchingAndSortingUsingGenerics\n10.FindNumber\n11.TaskDoneByMaximumAmount  ");
+            Console.WriteLine("1.Permutation Using Recursion\n2.BinarySearch\n3.InsertionSort\n4.BubbleSort\n5.MergeSort\n6.Anagram\n7.PrimeNumber\n8.AnagramAndPalindromeNumber\n9.SearchingAndSortingUsingGenerics\n10.FindNumber\n11.TaskDoneByMaximumAmount\n12.CustomisedMessages  ");
             Console.WriteLine("Enter Your Option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -52,9 +52,13 @@ class Program
                 //    FindNumber findnumber = new FindNumber();
                 //    findnumber.Find();
                 //    break;
-                case 11:
-                    TaskDoneByMaximumAmount taskdonebymaximumamount = new TaskDoneByMaximumAmount();
-                    taskdonebymaximumamount.tasks();
+                //case 11:
+                //    TaskDoneByMaximumAmount taskdonebymaximumamount = new TaskDoneByMaximumAmount();
+                //    taskdonebymaximumamount.tasks();
+                //    break;
+                case 12:
+                    CustomizedMessage customizedmessage = new CustomizedMessage();
+                    customizedmessage.printMessage();
                     break;
                 default:
                     Console.WriteLine("-------Enter the valid option---");
